@@ -1,0 +1,15 @@
+{
+  "name": "data-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "tzyito",
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "uuid": "^9.0.0"
+  }
+}

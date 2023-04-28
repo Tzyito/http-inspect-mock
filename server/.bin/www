@@ -1,0 +1,10 @@
+/*
+ * @Author: tzyito
+ * @Date: 2022-11-15
+ * @LastEditTime: 2022-11-15
+ * @LastEditors: tzyito
+ * @Description:
+ */
+var port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
+app.set("host", "10.9.155.89");
