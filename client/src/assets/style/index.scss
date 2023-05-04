@@ -1,0 +1,254 @@
+@import './atomic.scss';
+@import './main.scss';
+
+//手指
+.pointer {
+  cursor: pointer;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+//红框警告
+.red-border-error {
+  border: 2px solid red !important;
+}
+
+//复制
+.cursor-copy {
+  cursor: copy;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//字体
+.font-12 {
+  font-size: 12px;
+}
+
+.font-13 {
+  font-size: 13px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-17 {
+  font-size: 17px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-19 {
+  font-size: 19px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+//文本居中
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.flex-box-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-box-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-box-start-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flex-box-between-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// 通用加粗强调字体
+.con_fzb {
+  color: #1e1f23;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.client-list {
+  margin-bottom: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.mt-3 {
+  margin-top: 3px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.ml-50 {
+  margin-left: 50px;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.width-100 {
+  width: 100px;
+}
+
+//高亮
+.light-high-text {
+  background: yellow;
+  color: red;
+}
+
+.water-mark-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.water-word {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.12);
+  transform: rotate(-25deg);
+  user-select: none;
+}
+
+/* 业务样式 */
+/* 支持popover的样式 */
+.update-man-label-tag {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  min-width: 150px;
+  padding: 4px 4px;
+  border-bottom: 1px solid rgb(238, 236, 236);
+}
+.update-man-label-tag:hover {
+  color: #0b6fd6;
+}
+.update-man-label-tag-span {
+  display: inline-block;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+//修改浏览器默认样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(185, 185, 185);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(236, 235, 235);
+}

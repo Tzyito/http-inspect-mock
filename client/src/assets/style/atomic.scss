@@ -1,0 +1,465 @@
+@import 'atomic/variables';
+@import 'atomic/mixins';
+@import 'atomic/helpers';
+
+// padding padding-*
+@include paddings($padding_list);
+
+// margin margin-*
+@include margins($margin_list);
+
+// min-width
+@include minWidth($min_width);
+
+// max-width
+@include maxWidth($max_width);
+
+// font-size
+@include fontSize($fzs);
+
+// font-weight
+@include fontWeight($fw);
+
+// position
+.posr {
+  position: relative;
+}
+.posa {
+  position: absolute;
+}
+.posf {
+  position: fixed;
+}
+.poss {
+  position: static;
+}
+.posst {
+  position: sticky;
+}
+
+// top
+.t0 {
+  top: 0;
+}
+
+// right
+.end0 {
+  right: 0;
+}
+
+// bottom
+.b0 {
+  bottom: 0;
+}
+
+// left
+.start0 {
+  left: 0;
+}
+.start224 {
+  left: 224px;
+}
+
+// display
+.db {
+  display: block;
+}
+.di {
+  display: inline-block;
+}
+.df {
+  display: flex;
+}
+.dif {
+  display: inline-flex;
+}
+.dn {
+  display: none;
+}
+
+// flex
+.fxfxd {
+  flex: 0 0 auto;
+}
+.fxful {
+  flex: 1 1 100%;
+}
+.fxog {
+  flex: 1 0 auto;
+}
+.fxos {
+  flex: 0 1 auto;
+}
+.flwnw {
+  flex-wrap: nowrap;
+}
+.flww {
+  flex-wrap: wrap;
+}
+.fldr {
+  flex-direction: row;
+}
+.fldc {
+  flex-direction: column;
+}
+
+// justify-content
+.jcc {
+  justify-content: center;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcfs {
+  justify-content: flex-start;
+}
+.jcfe {
+  justify-content: flex-end;
+}
+
+// align-items
+.aic {
+  align-items: center;
+}
+.aist {
+  align-items: stretch;
+}
+.aifs {
+  align-items: flex-start;
+}
+.aife {
+  align-items: flex-end;
+}
+
+// align-self
+.asfe {
+  align-self: flex-end;
+}
+.asc {
+  align-self: center;
+}
+
+// font-weight
+.fwl {
+  font-weight: lighter;
+}
+.fwn {
+  font-weight: normal;
+}
+.fwb {
+  font-weight: 500;
+}
+.fwbr {
+  font-weight: bolder;
+}
+
+// white-space
+.whsnw {
+  white-space: nowrap;
+}
+.whsn {
+  white-space: normal;
+}
+
+// color
+.cn {
+  color: none;
+}
+.ct {
+  color: transparent;
+}
+.ccc {
+  color: currentcolor;
+}
+.cm {
+  color: $color_primary;
+}
+
+.cd1 {
+  color: $color_1;
+} // $dark_title_background
+.cd2 {
+  color: $color_2;
+} // $dark_line
+.cd3 {
+  color: $color_3;
+} // $dark_primary_text
+.cd4 {
+  color: $color_4;
+} // $dark_second_text
+.cl1 {
+  color: $color_5;
+} // $light_free
+.cl2 {
+  color: $color_6;
+} // $light_line
+.cl3 {
+  color: $color_7;
+} // $light_background
+.cl4 {
+  color: $color_8;
+} // $light_white
+
+.cw {
+  color: $color_white;
+}
+.cb {
+  color: $color_blue;
+}
+.cg {
+  color: $color_green;
+}
+.cr {
+  color: $color_red;
+}
+.cy {
+  color: $color_yellow;
+}
+.cs {
+  color: #666666;
+}
+
+// background-color
+.bgp {
+  background-color: $color_primary;
+}
+.bgct {
+  background-color: transparent;
+}
+.bgcd1 {
+  background-color: #1e1f23;
+}
+.bgcl1 {
+  background-color: #cbd1da;
+}
+.bgcl4 {
+  background-color: #fff;
+}
+
+// box-shadow
+.bxshpw {
+  box-shadow: 0 2px 8px rgba(236, 236, 236, 0.49);
+} // primary-white
+.bxshpd {
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.49);
+} // primary-dark
+
+// z-index
+.za {
+  z-index: auto;
+}
+.zn {
+  z-index: -1;
+}
+.zh {
+  z-index: 100;
+} // fix 状态的 header
+.zs {
+  z-index: 110;
+} // 侧边栏
+.zt {
+  z-index: 300;
+} // toast 提示
+.zd {
+  z-index: 200;
+} // 弹窗
+.zo {
+  z-index: 100;
+} // 浮层
+
+// width
+.w50 {
+  width: 50%;
+}
+
+.wa {
+  width: auto;
+}
+.wst {
+  width: 100%;
+}
+.wcnt {
+  width: 1200px;
+}
+.vw {
+  width: 100vw;
+}
+
+// height
+.ha {
+  height: auto;
+}
+.hst {
+  height: 100%;
+}
+.h100vh {
+  height: 100vh;
+}
+
+// box-sizing
+.bxzcb {
+  box-sizing: content-box;
+}
+.bxzbb {
+  box-sizing: border-box;
+}
+
+// overflow
+.ova {
+  overflow: auto;
+}
+.ovh {
+  overflow: hidden;
+}
+.ovs {
+  overflow: scroll;
+}
+
+// text-align
+.tac {
+  text-align: center;
+}
+.tastart {
+  text-align: left;
+}
+.taend {
+  text-align: right;
+}
+
+// text-decoration
+.tdn {
+  text-decoration: none;
+}
+.tdu {
+  text-decoration: underline;
+}
+.tdlt {
+  text-decoration: line-through;
+}
+.tdo {
+  text-decoration: overline;
+}
+
+// -*-:hover
+.hover_tdu:hover {
+  text-decoration: underline;
+}
+.hover_bxshpd:hover {
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.49);
+}
+
+// line-height
+.lhcr {
+  line-height: 1;
+}
+
+// vertical-align
+.vat {
+  vertical-align: top;
+}
+.vam {
+  vertical-align: middle;
+}
+.vab {
+  vertical-align: bottom;
+}
+.vabl {
+  vertical-align: baseline;
+}
+.vasub {
+  vertical-align: sub;
+}
+.vasup {
+  vertical-align: super;
+}
+
+// border
+.bdt1 {
+  border-top: 1px;
+}
+.bdb1 {
+  border-bottom: 1px;
+}
+.bdb2 {
+  border-bottom: 2px;
+}
+
+// border-color
+.bdct {
+  border-color: transparent;
+}
+.bdccc {
+  border-color: currentcolor;
+}
+.bdcn {
+  border-color: none;
+}
+
+// border-style
+.bdsn {
+  border-style: none;
+}
+.bdss {
+  border-style: solid;
+}
+.bdsd {
+  border-style: dashed;
+}
+
+// border-radius
+.bdr0 {
+  border-radius: 0;
+}
+.bdrsp {
+  border-radius: $bdrs_primary;
+}
+.bdrs_round {
+  border-radius: $bdrs_round;
+}
+.bdrs_circle {
+  border-radius: $bdrs_circle;
+}
+
+// cursor
+.curp {
+  cursor: pointer;
+}
+
+.clearft {
+  clear: both;
+}
+
+// object-fit
+.ofc {
+  object-fit: cover;
+}
+
+// float
+.fln {
+  float: none;
+}
+.flstart {
+  float: left;
+}
+.flend {
+  float: right;
+}
+
+// opacity
+.op1 {
+  opacity: 1;
+}
+.op0 {
+  opacity: 0;
+}
+.op06 {
+  opacity: 0.6;
+}
+
+// visibility
+.v {
+  visibility: visible;
+}
+.vh {
+  visibility: hidden;
+}

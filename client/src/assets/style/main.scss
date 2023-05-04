@@ -1,0 +1,203 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background-color: #f7f9fc;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.444;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica',
+    'Microsoft YaHei UI', 'Segoe UI', 'Arial', sans-serif;
+  color: #686c78;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+}
+
+.g_search {
+  width: 40%;
+}
+
+.Txcel {
+  width: 100%;
+
+  td {
+    padding: 8px 0;
+  }
+
+  .el-table .cell {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .el-table__header {
+    .cell {
+      padding: 0 4px;
+      font-weight: 600;
+    }
+  }
+
+  .el-table-column--selection .cell {
+    text-overflow: unset;
+  }
+
+  .el-pagination {
+    margin-top: 16px;
+    text-align: right;
+  }
+}
+
+.popover_set {
+  width: 450px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.keyword_mark {
+  background: yellow;
+  color: red;
+}
+
+.cell_tools_third_tags {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.domain_diolag {
+  max-height: 500px;
+  border-bottom: 32px solid transparent;
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+// table中展示的图片
+.viewer_img {
+  height: 50px;
+}
+
+// element的el-card的样式，用于组件本身作为一个独立的组件和作为其他组件的子组件时，是否显示背景的el-card
+.el-card-div {
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  background-color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
+  color: #686c78;
+  transition: 0.3s;
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.ctServerInfo .el-textarea {
+  width: 500px;
+}
+
+.proof_img {
+  height: 200px;
+}
+
+.content_img {
+  height: 400px;
+  cursor: pointer;
+}
+
+.arrow::before {
+  content: ' -> ';
+  color: black;
+}
+
+.mtml {
+  margin: -4px 0 0 8px;
+}
+
+.h50 {
+  height: 50px;
+}
+
+.h142 {
+  height: 142px;
+}
+
+.mh142 {
+  min-height: 142px;
+}
+
+.review-info-btn {
+  padding: 0;
+  float: right;
+  clear: both;
+}
+
+.review-info-content {
+  &::before {
+    content: '';
+    float: right;
+    width: 2px;
+    height: 100%;
+    margin-bottom: -16px;
+  }
+}
+
+.hightLight {
+  color: red;
+}
+
+.degree {
+  .el-radio.is-bordered .is-checked + .el-radio__label {
+    color: #fff;
+  }
+
+  .el-radio.is-bordered:first-child {
+    border: 1px solid #67c23a;
+  }
+  .el-radio.is-bordered:first-child.is-checked {
+    background: #67c23a;
+  }
+
+  .el-radio.is-bordered:nth-child(2) {
+    border: 1px solid #f56c6c;
+  }
+  .el-radio.is-bordered:nth-child(2).is-checked {
+    background: #f56c6c;
+  }
+  .el-radio.is-bordered:nth-child(3) {
+    border: 1px solid #e6a23c;
+  }
+  .el-radio.is-bordered:nth-child(3).is-checked {
+    background: #e6a23c;
+  }
+  .el-radio.is-bordered:nth-child(4) {
+    border: 1px solid #409eff;
+  }
+  .el-radio.is-bordered:nth-child(4).is-checked {
+    background: #409eff;
+  }
+  .el-radio.is-bordered:last-child {
+    border: 1px solid #00ced1;
+  }
+  .el-radio.is-bordered:last-child.is-checked {
+    background: #00ced1;
+  }
+}

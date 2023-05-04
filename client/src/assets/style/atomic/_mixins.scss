@@ -1,0 +1,103 @@
+@mixin paddings($paddings) {
+  @each $p in $paddings {
+    .p#{$p} {
+      padding: #{$p}px;
+    }
+    .pt#{$p} {
+      padding-top: #{$p}px;
+    }
+    .pr#{$p} {
+      padding-right: #{$p}px;
+    }
+    .pb#{$p} {
+      padding-bottom: #{$p}px;
+    }
+    .pl#{$p} {
+      padding-left: #{$p}px;
+    }
+    .px#{$p} {
+      padding-left: #{$p}px;
+      padding-right: #{$p}px;
+    }
+    .py#{$p} {
+      padding-top: #{$p}px;
+      padding-bottom: #{$p}px;
+    }
+  }
+}
+
+@mixin margins($margins) {
+  @each $m in $margins {
+    .m#{$m} {
+      margin: #{$m}px;
+    }
+    .mt#{$m} {
+      margin-top: #{$m}px;
+    }
+    .mr#{$m} {
+      margin-right: #{$m}px;
+    }
+    .mb#{$m} {
+      margin-bottom: #{$m}px;
+    }
+    .ml#{$m} {
+      margin-left: #{$m}px;
+    }
+    .mx#{$m} {
+      margin-left: #{$m}px;
+      margin-right: #{$m}px;
+    }
+    .my#{$m} {
+      margin-top: #{$m}px;
+      margin-bottom: #{$m}px;
+    }
+  }
+
+  .ma {
+    margin: auto;
+  }
+  .mla {
+    margin-left: auto;
+  }
+  .mra {
+    margin-right: auto;
+  }
+  .mxa {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin minWidth($minwidth) {
+  @each $minw in $minwidth {
+    .minw#{$minw} {
+      min-width: #{$minw}px;
+    }
+  }
+}
+
+@mixin maxWidth($maxwidth) {
+  @each $maxw in $maxwidth {
+    .maxw#{$maxw} {
+      max-width: #{$maxw}px;
+    }
+  }
+}
+
+@mixin fontSize($fzs) {
+  @each $fz in $fzs {
+    .fz#{$fz} {
+      font-size: #{$fz}px;
+    }
+  }
+}
+
+@mixin fontWeight($fws) {
+  @each $fw in $fws {
+    .fw#{$fw} {
+      font-weight: #{$fw};
+    }
+  }
+}
+
+// font-weight
