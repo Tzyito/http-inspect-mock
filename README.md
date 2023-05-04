@@ -6,7 +6,8 @@
 
 1. 提供一个http拦截的app，它能帮你在本地开发时提供mock服务。
 2. 还提供解析golang结构体，你可以得到一个json对象并通过这个对象进行mock数据
-3. 能自定义修改拦截到的响应数据，并自行维护这些url
+3. 能自定义修改拦截到的响应数据，并自行维护这些url.
+
 
 # This project originated from a whim
 
